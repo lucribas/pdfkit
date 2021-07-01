@@ -8,7 +8,7 @@ const external = [
   'zlib',
   '@foliojs-fork/fontkit',
   'events',
-  'linebreak',
+  '@foliojs-fork/linebreak',
   'png-js',
   'crypto-js',
   'saslprep'
