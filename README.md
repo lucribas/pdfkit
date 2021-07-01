@@ -20,7 +20,7 @@ You can also try out an interactive in-browser demo of PDFKit [here](http://pdfk
 
 Installation uses the [npm](http://npmjs.org/) package manager. Just type the following command after installing npm.
 
-    npm install pdfkit
+    npm install @foliojs-fork/pdfkit
 
 ## Features
 
