@@ -2,9 +2,6 @@
 
 ### Unreleased
 
-- Allow applying 'underline' and 'strike' text styling together on a text
-- Allow to specify the AcroForm text fontSize
-
 ### [v0.12.1] - 2021-04-10
 
 - Update crypto-js to v3.3 (fix security issue)
