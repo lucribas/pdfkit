@@ -1,4 +1,7 @@
-# Fork of PDFKit
+# Fork of PDFKit [![npm][npm_img]][npm_url]
+
+[npm_img]: https://img.shields.io/npm/v/@foliojs-fork/pdfkit.svg?colorB=0E7FBF
+[npm_url]: https://www.npmjs.com/package/@foliojs-fork/pdfkit
 
 A JavaScript PDF generation library for Node and the browser.
 
