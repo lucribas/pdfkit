@@ -9,7 +9,7 @@
     "document",
     "vector"
   ],
-  "version": "0.12.1",
+  "version": "0.12.3",
   "homepage": "http://pdfkit.org/",
   "author": {
     "name": "Devon Govett",
@@ -47,7 +47,7 @@
     "rollup-plugin-cpy": "^2.0.1"
   },
   "dependencies": {
-    "crypto-js": "^3.3.0",
+    "crypto-js": "^4.0.0",
     "@foliojs-fork/fontkit": "^1.9.0",
     "@foliojs-fork/linebreak": "^1.1.0",
     "png-js": "^1.0.0"
@@ -55,14 +55,12 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "rollup -c",
-    "demo": "cd demo && node test.js",
-    "browser-demo": "browserify demo/browser.js > demo/bundle.js",
-    "pdf-guide": "node docs/generate.js",
+    "browserify-example": "browserify examples/browserify/browser.js > examples/browserify/bundle.js",    "pdf-guide": "node docs/generate.js",
     "website": "node docs/generate_website.js",
     "publish-website": "node docs/publish_website.js",
-    "docs": "npm run pdf-guide && npm run website && npm run browser-demo",
+    "docs": "npm run pdf-guide && npm run website && npm run browserify-example",
     "lint": "eslint {lib,tests}/**/*.js",
-    "prettier": "prettier {lib,tests,demo,docs}/**/*.js",
+    "prettier": "prettier {lib,tests,examples,docs}/**/*.js",
     "test": "jest -i",
     "test:visual": "jest visual/ -i",
     "test:unit": "jest unit/"
@@ -81,7 +79,7 @@
   "jest": {
     "testPathIgnorePatterns": [
       "/node_modules/",
-      "<rootDir>/demo/"
+      "<rootDir>/examples/"
     ],
     "testURL": "http://localhost/",
     "setupFilesAfterEnv": [
