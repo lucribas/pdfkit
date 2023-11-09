@@ -6,9 +6,9 @@ const external = [
   'stream',
   'fs',
   'zlib',
-  'fontkit',
+  '@foliojs-fork/fontkit',
   'events',
-  'linebreak',
+  '@foliojs-fork/linebreak',
   'png-js',
   'crypto-js',
   'saslprep'
