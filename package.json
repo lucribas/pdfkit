@@ -1,5 +1,5 @@
 {
-  "name": "@foliojs-fork/pdfkit",
+  "name": "pdfkit",
   "description": "A PDF generation library for Node.js",
   "keywords": [
     "pdf",
@@ -19,9 +19,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/foliojs-fork/pdfkit.git"
+    "url": "https://github.com/foliojs/pdfkit.git"
   },
-  "bugs": "https://github.com/foliojs-fork/pdfkit/issues",
+  "bugs": "https://github.com/foliojs/pdfkit/issues",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-external-helpers": "^7.10.4",
@@ -49,14 +49,15 @@
   },
   "dependencies": {
     "crypto-js": "^4.2.0",
-    "@foliojs-fork/fontkit": "^1.9.1",
-    "@foliojs-fork/linebreak": "^1.1.1",
+    "fontkit": "^1.8.1",
+    "linebreak": "^1.0.2",
     "png-js": "^1.0.0"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "rollup -c",
-    "browserify-example": "browserify examples/browserify/browser.js > examples/browserify/bundle.js",    "pdf-guide": "node docs/generate.js",
+    "build": "rollup -c && browserify --standalone PDFDocument --ignore crypto --ignore iconv-lite js/pdfkit.js > js/pdfkit.standalone.js",
+    "browserify-example": "browserify examples/browserify/browser.js > examples/browserify/bundle.js",
+    "pdf-guide": "node docs/generate.js",
     "website": "node docs/generate_website.js",
     "publish-website": "node docs/publish_website.js",
     "docs": "npm run pdf-guide && npm run website && npm run browserify-example",

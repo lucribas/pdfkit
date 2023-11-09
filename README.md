@@ -1,7 +1,4 @@
-# Fork of PDFKit [![npm][npm_img]][npm_url]
-
-[npm_img]: https://img.shields.io/npm/v/@foliojs-fork/pdfkit.svg?colorB=0E7FBF
-[npm_url]: https://www.npmjs.com/package/@foliojs-fork/pdfkit
+# PDFKit
 
 A JavaScript PDF generation library for Node and the browser.
 
@@ -19,17 +16,11 @@ folder.
 
 You can also try out an interactive in-browser demo of PDFKit [here](http://pdfkit.org/demo/browser.html).
 
-## Why fork?
-
-Because PDFKit require up-to-date these dependencies:
-- [foliojs-fork/fontkit](https://github.com/foliojs-fork/fontkit) (see [Why fork?](https://github.com/foliojs-fork/fontkit#why-fork))
-- [foliojs-fork/linebreak](https://github.com/foliojs-fork/linebreak) (see [Why fork?](https://github.com/foliojs-fork/linebreak#why-fork))
-
 ## Installation
 
 Installation uses the [npm](http://npmjs.org/) package manager. Just type the following command after installing npm.
 
-    npm install @foliojs-fork/pdfkit
+    npm install pdfkit
 
 ## Features
 
