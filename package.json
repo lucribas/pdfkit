@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "crypto-js": "^4.2.0",
-    "@foliojs-fork/fontkit": "^1.9.1",
+    "@foliojs-fork/fontkit": "^1.9.2",
     "@foliojs-fork/linebreak": "^1.1.1",
     "jpeg-exif": "^1.1.4",
     "png-js": "^1.0.0"
